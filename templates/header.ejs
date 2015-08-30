@@ -29,7 +29,7 @@
     <div class="center">
 
             <ul>
-            <% if (submenus.length) { %>
+            <% if (submenus.length > 0) { %>
             <% submenus.forEach(function(submenu){ %>
               <li <% if (submenu.active) { %>class="change"<% } %>><a href="<%=submenu.link %>"><%=submenu.title %></a></li>
             <% }) %>

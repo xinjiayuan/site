@@ -14,9 +14,9 @@ var projectReader = new ProjectReader();
 var _projects = projectReader.getProjects('lighting');
 
 var indexdata = {
-    menus:_menus,
-    submenus:_submenus,
-    projects : _projects
+    'menus':_menus,
+    'submenus':_submenus,
+    'projects' : _projects
 };
 
 exports = module.exports = indexdata;
