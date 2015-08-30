@@ -1,0 +1,46 @@
+<header id="header">
+    <div class="loading"></div>
+    <div class="center">
+
+        <div id="logo">
+            <a href="/index.html"><img src="images/logo.png" alt="武汉鑫嘉源工程有限公司" /></a>
+        </div>
+        <!-- logo结束 -->
+        <nav id="menu">
+        <ul>
+            <% menus.forEach(function(menu){ %>
+              <li <% if (menu.active) { %>class="change"<% } %>><a href="<%=menu.link %>"><%=menu.title %></a></li>
+            <% }) %>
+            <!-- <li class="change"><a href="cases.html">鑫嘉源案例</a></li>
+            <li><a href="about.html">关于鑫嘉源</a></li>
+            <li><a href="news.html">鑫嘉源资讯</a></li>
+            <li><a href="contact.html">联系我们</a></li> -->
+        </ul>
+        <span class="btn_redbg"></span>
+        </nav>
+        <!-- menu结束 -->
+        <span class="clear"></span>
+        <!-- 清除浮动 -->
+    </div>
+
+</header>
+<!-- header结束 -->
+<nav id="nav">
+    <div class="center">
+
+            <ul>
+            <% if (submenus.length) { %>
+            <% submenus.forEach(function(submenu){ %>
+              <li <% if (submenu.active) { %>class="change"<% } %>><a href="<%=submenu.link %>"><%=submenu.title %></a></li>
+            <% }) %>
+            <% } %>
+                <!-- <li class="change"><a href="projects/light-projects.html">亮化工程</a></li>
+                <li><a href="projects/building-lumin-chars.html">楼宇发光字</a></li>
+                <li><a href="projects/building-rainbow-chars.html">楼宇彩虹字</a></li>
+                <li><a href="projects/signages.html">标识标牌</a></li>
+                <li><a href="projects/realestate-wall.html">房地产围墙</a></li> -->
+            </ul>
+        <span class="btn_redbg"></span>
+    </div>
+
+</nav>

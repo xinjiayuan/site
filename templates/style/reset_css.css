@@ -1,0 +1,35 @@
+﻿/* - - - - - - - - - 各浏览器样式默认值标准化  - - - - - - - - -*/
+html,body,span,object,iframe,h1,h2,h3,h4,h5,p,blockquote,pre,
+a,address,code,
+del,em,img,dl,dt,dd,ol,ul,li,
+fieldset,form,label{
+margin:0;padding:0;border:0;
+font-style:inherit;font-family:inherit;vertical-align:baseline;}
+img{border:none;vertical-align:middle;}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;display: block;}
+input,select,button{vertical-align:middle;}
+input{padding:0;}
+button{cursor:pointer;}
+html{font-size:62.5%;}
+body{font-size:14px;font-size:1.4rem;background-color:#2f2f2f;color:#b9b9b9;font-family:'微软雅黑';}
+html,body{width:100%; height:100%;}
+#nr{width:100%; height:100%;_height:100%;min-height:100%;margin:0 auto;}
+ul,ol{list-style-type:none;}
+h1{font-size:24px;}
+h2{font-size:18px;}
+h3,h4{font-size:14px;}
+h5{font-size:12px;}
+em,address{font-style:normal;}
+a{ text-decoration:none;color:#b9b9b9;}
+/*链接样式*/
+a:link{}	
+a:hover{text-decoration:underline;}	/*鼠标悬停时*/
+a:active{}	/*点击与释放时*/
+a:visited{}/* 访问过 */
+/*  - - - - - - - - - 常用类样式  - - - - - - - - -*/
+.no_bor{ border:none!important;}	/*无边框*/
+.no_bg{ background:none!important;}	/*无背景*/
+.clear{ display:block;height:0; line-height:0;overflow:hidden; clear:both;font-size:0;}/*清除浮动*/
+.f_left{ float:left;}	/*左浮动*/
+.f_right{ float:right;}	/*右浮动*/
+.center{}

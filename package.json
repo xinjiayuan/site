@@ -1,0 +1,22 @@
+{
+  "name": "XINJIAYUAN",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+
+  },
+  "license":"",
+  "repository":{
+    "type": "git",
+    "url": "https://github.com/XinJiaYuan/site.git"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.8.6",
+    "gulp-rename": "*",
+    "gulp-ejs" : "^1.1.1",
+    "ejs" : "^2.3.3"
+  }
+}

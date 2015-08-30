@@ -1,0 +1,68 @@
+﻿/*- - - - - - - - -样式属首页.html - - - - - - - -*/
+	/*页头*/
+	#header{ overflow:hidden;min-width:960px;background-color:#171717;position:relative;width:100%;height:136px;}
+	#header .loading{position:absolute;left:0px;top:0px;height:5px;background-color:#d81e05;line-height:0;font-size:0;overflow:hidden;}
+	#header .center{min-width:960px;max-width:1200px;margin:0 auto;}
+		/*网站标志*/
+		#logo{float:left;width:48.33%;height:90%;margin-left:2%;padding-top:29px;}
+		#logo img{max-width:100%;}
+		/*菜单*/
+		#menu{float:right;width:41.92%; position:relative;padding-top:30px;}
+		#menu ul{float:right; position:relative; z-index:5000;}
+		#menu ul li{float:left;text-align:center;width:123px;line-height:105px;}
+		#menu ul li a{font-size:19px;}
+		#menu ul li.change a,#menu ul li a:hover{color:#fff;text-decoration:none;}
+		#menu .btn_redbg{ background:url(../images/menu_libg.jpg) repeat-x left top;position:absolute;top:30px;left:0px;max-width:123px;height:105px;}
+		
+	/*导航*/
+	#nav{min-width:960px;height:39px;margin:0 auto;background-color:#ffffff;}
+	#nav .center{min-width:960px;max-width:1200px;margin:0 auto;position:relative;}
+	#nav ul{float:right;z-index:1500;position:relative;}
+	#nav ul li{float:left;}
+	#nav ul li a{float:left;height:39px;line-height:39px;font-size:18px;color:#040404;padding:0 24px;}
+	#nav ul li.change a,#nav ul li a:hover{text-decoration:none;color:#fff;}
+	#nav .btn_redbg{height:39px;line-height:39px;background:url(../images/menu_libg.jpg) repeat-x left top;position:absolute;top:0px;left:0px;}
+	/*产品列表*/
+	#ProudctList{width:100%;overflow:hidden;margin:0 auto;padding:30px 0 50px;max-width:1200px;min-width:960px;}
+	#ProudctList h2{height:94px;line-height:94px;overflow:hidden;font-size:28px;font-weight:normal;}
+	#ProudctList .PictureList{width:106.6%;}
+	.pages{text-align:right;font-size:18px;}
+	.pages a{margin:0 5px;}
+	.pages .select{padding:3px;border:1px solid #8a8a8a;}
+	/*版权*/
+	#copyright{min-width:960px;height:36px;line-height:36px;text-align:center;font-size:14px;margin:0 auto;background-color:#181818;}
+	/*图片列表*/
+	.PictureList{float:left;}
+	.PictureList li{float:left;width:25.17%;text-align:center;margin:0 6% 4% 0;background-color:#7d7d7d;display:inline;padding:1% 1% 0 1%;}
+	.PictureList li.hover{background-color:#a2a2a2;}
+	.PictureList li a{display:block;width:100%;height:100%;}
+	.PictureList li a:hover{text-decoration:none;}
+	.PictureList li a img{width:97.51%;overflow:hidden;padding:4px;border:2px solid #333;display:block;}
+	.PictureList li a strong{height:34px;line-height:34px;overflow:hidden;font-size:19px;font-weight:normal;color:#fff;display:block;}
+/*- - - - - - - - -样式属亮化工程.html - - - - - - - -*/
+	/*您所在位置*/
+	#weizi{height:52px;line-height:52px;margin:40px auto 0px auto;max-width:1200px;min-width:960px;padding:0 5%;box-sizing:border-box;font-size:18px;}
+	/*产品内容区域*/
+	#ProductContent{line-height:28px;font-size:16px;margin:0 auto;min-width:960px;max-width:1200px;}
+	#ProductContent .content{min-width:960px;width:90%;overflow:hidden;margin:0 auto;}
+	#ProductContent .content img{display:block;margin:0px auto 30px auto;border:3px solid #6e6e6e;max-width:95%;min-width:95%;}
+	#ProductContent .content p{margin-bottom:10px;text-indent:28px;}
+	#ProductContent .pages{width:85%;margin:0 auto;}
+	/*联系我们*/
+	#contact{padding:29px 0;margin:0px auto 40px auto;font-size:18px;min-width:960px;max-width:1200px;}
+	#contact .icon{float:left;margin-right:21px;display:inline;margin-left:7%;}
+	#contact p{line-height:38px;}
+	@media screen and (max-width: 1280px) {
+		#menu ul li{float:left;text-align:center;width:105px;}
+		#menu ul li a{text-align:center;font-size:18px;display:block;line-height:95px;}
+	}
+	  
+	/*1100及以下*/
+	@media screen and (max-width: 1100px) {
+		#menu ul li{float:left;text-align:center;width:95px;}
+		#menu ul li a{text-align:center;font-size:16px;display:block;line-height:95px;}
+		#nav{height:30px;margin:0 auto;background-color:#ffffff;}
+		#nav ul li a{float:left;height:30px;line-height:30px;font-size:16px;color:#040404;}
+		#nav .btn_redbg{height:30px;line-height:30px;}
+	}
+	
