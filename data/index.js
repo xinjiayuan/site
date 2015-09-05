@@ -9,9 +9,12 @@ var _menus = util.activeMenu(global.menus, '鑫嘉源案例');
 
 var _submenus = util.activeMenu(global.submenus.cases, '亮化工程');
 
-var projectReader = new ProjectReader();
+var projectReader = new ProjectReader({dist:'./dist/cases/'});
 
 var _projects = projectReader.getProjects('lighting');
+
+//生成子页面
+projectReader.generateProjects();
 
 var indexdata = {
     'menus':_menus,
