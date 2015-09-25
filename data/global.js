@@ -29,22 +29,26 @@ var global = {
         "cases" : [
             {
                 "title" : "亮化工程",
-                "link"  : "/cases/lighting.html",
+                "name" : "lighting",
+                "link"  : "lighting.html",
                 "active": false
             },
             {
                 "title" : "楼顶发光字",
-                "link"  : "/cases/building-lumin-chars.html",
+                "name" : "building-lumin-chars",
+                "link"  : "building-lumin-chars.html",
                 "active": false
             },
             {
                 "title" : "楼宇彩虹字",
-                "link"  : "/cases/building-rainbow-chars.html",
+                "name" : "building-rainbow-chars",
+                "link"  : "building-rainbow-chars.html",
                 "active": false
             },
             {
                 "title" : "房地产围墙",
-                "link"  : "/cases/realestate-wall.html",
+                "name" : "realestate-wall",
+                "link"  : "realestate-wall.html",
                 "active": false
             }
         ],

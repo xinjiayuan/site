@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+    <meta name="viewport" content="width=960, initial-scale=0.33">
+	<title><%=project.title %></title>
+    <script src="../../js/respond.src.js"></script>
+	<link href="../../style/reset_css.css" rel="stylesheet" />
+	<link href="../../style/all.css"  rel="stylesheet" />
+    <script src="../../js/jquery.js"></script>
+    <script src="../../js/load.js" defer></script>
+	<!--[if IE]>
+	<script src="js/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+
+        <% include header %>
+        <!-- nav结束 -->
+        <div id="weizi">
+            当前位置：<a href="index.html">首页</a> &gt;<a href="<%=project.field %>"></a> &gt; <%=project.title %>
+        </div>
+        <!-- weizi结束 -->
+
+        <div id="ProductContent">
+            <div class="content">
+            <!-- 文章内容开始 -->
+                    <p><%=project.desc %></p>
+                    <br>
+                    <% project.images.forEach(function(img){ %>
+                      <img src="<%=project.index %>/<%=img %>" alt="<%=project.title %>" />
+                    <% }) %>
+            <!-- 文章内容结束 -->
+            </div>
+
+
+            <!-- <div class="pages">
+                        <em>1/2页</em>
+                        <a href="#">首页</a>
+                        <a href="#">下一页</a>
+                        <a href="#">尾页</a>
+                        跳转
+                         <select class="select" name="select">
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                        </select>
+                        页
+            </div> -->
+        </div>
+        <!-- ProductContent结束 -->
+
+        <div id="contact">
+
+            <img src="images/icon_tel.png" alt="图片描述" class="icon" />
+            <p>联系鑫嘉源：+86 027 84698920   +18971195470</p>
+            <p>公司地址：武汉江岸区汉黄路20号</p>
+
+        </div>
+        <!-- contact结束 -->
+        <footer id="copyright">
+            <p>武汉鑫嘉源钢结构工程有限公司 版权所有 2007-2016 鄂ICP备05201314号</p>
+
+        </footer>
+        <!-- copyright结束 -->
+
+</body>
+</html>
