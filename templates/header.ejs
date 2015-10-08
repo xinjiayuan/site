@@ -3,18 +3,16 @@
     <div class="center">
 
         <div id="logo">
-            <a href="/index.html"><img src="images/logo.png" alt="武汉鑫嘉源工程有限公司" /></a>
+            <a href="<%=path %>index.html"><img src="<%=path %>images/logo.png" alt="武汉鑫嘉源工程有限公司" /></a>
         </div>
         <!-- logo结束 -->
         <nav id="menu">
         <ul>
             <% menus.forEach(function(menu){ %>
-              <li <% if (menu.active) { %>class="change"<% } %>><a href="<%=menu.link %>"><%=menu.title %></a></li>
+              <li <% if (menu.active) { %>class="change"<% } %>><a href="<%=path %><%=menu.link %>"><%=menu.title %></a></li>
             <% }) %>
             <!-- <li class="change"><a href="cases.html">鑫嘉源案例</a></li>
-            <li><a href="about.html">关于鑫嘉源</a></li>
-            <li><a href="news.html">鑫嘉源资讯</a></li>
-            <li><a href="contact.html">联系我们</a></li> -->
+             -->
         </ul>
         <span class="btn_redbg"></span>
         </nav>
@@ -30,8 +28,8 @@
 
             <ul>
             <% if (submenus.length > 0) { %>
-            <% submenus.forEach(function(submenu){ %>
-              <li <% if (submenu.active) { %>class="change"<% } %>><a href="<%=submenu.link %>"><%=submenu.title %></a></li>
+            <% submenus.forEach(function(_submenu){ %>
+              <li<% if (_submenu.name === pagename) { %> class="change"<% } %>><a href="<%=path %><%=_submenu.link %>"><%=_submenu.title %></a></li>
             <% }) %>
             <% } %>
                 <!-- <li class="change"><a href="projects/light-projects.html">亮化工程</a></li>

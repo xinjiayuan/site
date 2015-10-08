@@ -13,7 +13,7 @@
 		#menu ul li a{font-size:19px;}
 		#menu ul li.change a,#menu ul li a:hover{color:#fff;text-decoration:none;}
 		#menu .btn_redbg{ background:url(../images/menu_libg.jpg) repeat-x left top;position:absolute;top:30px;left:0px;max-width:123px;height:105px;}
-		
+
 	/*导航*/
 	#nav{min-width:960px;height:39px;margin:0 auto;background-color:#ffffff;}
 	#nav .center{min-width:960px;max-width:1200px;margin:0 auto;position:relative;}
@@ -45,7 +45,7 @@
 	/*产品内容区域*/
 	#ProductContent{line-height:28px;font-size:16px;margin:0 auto;min-width:960px;max-width:1200px;}
 	#ProductContent .content{min-width:960px;width:90%;overflow:hidden;margin:0 auto;}
-	#ProductContent .content img{display:block;margin:0px auto 30px auto;border:3px solid #6e6e6e;max-width:95%;min-width:95%;}
+	#ProductContent .content img{display:block;margin:0px auto 30px auto;border:3px solid #6e6e6e;/*max-width:95%;min-width:95%;*/}
 	#ProductContent .content p{margin-bottom:10px;text-indent:28px;}
 	#ProductContent .pages{width:85%;margin:0 auto;}
 	/*联系我们*/
@@ -56,7 +56,7 @@
 		#menu ul li{float:left;text-align:center;width:105px;}
 		#menu ul li a{text-align:center;font-size:18px;display:block;line-height:95px;}
 	}
-	  
+
 	/*1100及以下*/
 	@media screen and (max-width: 1100px) {
 		#menu ul li{float:left;text-align:center;width:95px;}
@@ -65,4 +65,4 @@
 		#nav ul li a{float:left;height:30px;line-height:30px;font-size:16px;color:#040404;}
 		#nav .btn_redbg{height:30px;line-height:30px;}
 	}
-	
+

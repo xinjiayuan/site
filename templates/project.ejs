@@ -18,7 +18,7 @@
         <% include header %>
         <!-- nav结束 -->
         <div id="weizi">
-            当前位置：<a href="index.html">首页</a> &gt;<a href="<%=project.field %>"></a> &gt; <%=project.title %>
+            当前位置：<a href="<%=parentlink %>"><%=fieldtitle %></a> &gt;&gt; <%=project.title %>
         </div>
         <!-- weizi结束 -->
 
@@ -52,7 +52,7 @@
 
         <div id="contact">
 
-            <img src="images/icon_tel.png" alt="图片描述" class="icon" />
+            <img src="<%=path %>images/icon_tel.png" alt="图片描述" class="icon" />
             <p>联系鑫嘉源：+86 027 84698920   +18971195470</p>
             <p>公司地址：武汉江岸区汉黄路20号</p>
 

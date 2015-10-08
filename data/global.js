@@ -50,6 +50,12 @@ var global = {
                 "name" : "realestate-wall",
                 "link"  : "realestate-wall.html",
                 "active": false
+            },
+            {
+                "title" : "标识标牌",
+                "name" : "sign",
+                "link"  : "sign.html",
+                "active": false
             }
         ],
 
