@@ -1,4 +1,4 @@
-var fs=require("fs"),
+﻿var fs=require("fs"),
     gulp=require("gulp"),
     del = require("del"),
     cp = require("cp"),
@@ -156,6 +156,12 @@ Project.prototype = {
                 var index = parseInt(nameParts[0]);
                 //项目名称
                 var title = nameParts[1].substring(0, nameParts[1].length-4);
+		var desc = "";
+		try {
+			desc = fs.readFileSync(this.root+field+"/"+index+"/desc.txt");
+		} catch (err) {
+			console.error(err);
+		}
                 //项目信息
                 var projectInfo = {
                     "imgFile" : name,
@@ -165,7 +171,7 @@ Project.prototype = {
                     "link"  : this.urlRoot+field+'/'+ index+'.html',
                     "imgalt": title,
                     //从desc.txt中读取项目的描述信息
-                    "desc"  : fs.readFileSync(this.root+field+"/"+index+"/desc.txt")
+                    "desc"  : desc
                 };
                 //从[index]文件夹中读取图片文件, 并去掉txt文件
                 var hits=[];
