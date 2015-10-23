@@ -3,8 +3,6 @@ var global = require("./global"),
     fs=require("fs"),
     gulp=require("gulp"),
     ejs = require("ejs"),
-    Step = require("./step"),
-    Promise = require("bluebird");
     util   = require("./util");
 
 
