@@ -3,7 +3,7 @@ var global = {
     "menus": [
         {
             "title" : "鑫嘉源案例",
-            "link"  : "/cases.html",
+            "link"  : "/index.html",
             "active": false
         },
         {
@@ -59,7 +59,25 @@ var global = {
             }
         ],
 
-        "info" : [
+        "about" : [
+            {
+                "title" : "我们的业务",
+                "name" : "about",
+                "link"  : "about.html",
+                "active": false
+            },
+            {
+                "title" : "我们的愿景",
+                "name" : "aboutwish",
+                "link"  : "aboutwish.html",
+                "active": false
+            },
+            {
+                "title" : "我们的客户",
+                "name" : "aboutcustomer",
+                "link"  : "aboutcustomer.html",
+                "active": false
+            }
         ]
     }
 };

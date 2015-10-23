@@ -27,10 +27,12 @@
     <div class="center">
 
             <ul>
+            <% if (submenus) { %>
             <% if (submenus.length > 0) { %>
             <% submenus.forEach(function(_submenu){ %>
               <li<% if (_submenu.name === pagename) { %> class="change"<% } %>><a href="<%=path %><%=_submenu.link %>"><%=_submenu.title %></a></li>
             <% }) %>
+            <% } %>
             <% } %>
                 <!-- <li class="change"><a href="projects/light-projects.html">亮化工程</a></li>
                 <li><a href="projects/building-lumin-chars.html">楼宇发光字</a></li>
