@@ -24,6 +24,9 @@
 
 					var movebg=$("#menu").find(".btn_redbg")
 					var change_mb=$("#menu").find("li.change")
+					if (!movebg.position() || !change_mb.position()) {
+						return;
+					}
 					var ul=$("#menu").find("ul")
 					if (zt==0)
 					{
@@ -69,6 +72,9 @@
 				$.reset_redbtn=function(zt){
 					var movebg=$("#nav").find(".btn_redbg")
 					var change_mb=$("#nav").find("li.change")
+					if (!movebg.position() || !change_mb.position()) {
+						return;
+					}
 					var ul=$("#nav").find("ul")
 					if (zt==0)
 					{
