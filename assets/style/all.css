@@ -48,6 +48,20 @@
 	#ProductContent .content img{display:block;margin:0px auto 30px auto;border:3px solid #6e6e6e;/*max-width:95%;min-width:95%;*/}
 	#ProductContent .content p{margin-bottom:10px;text-indent:28px;}
 	#ProductContent .pages{width:85%;margin:0 auto;}
+	#AboutUs h3{text-align: center;font-size: 50px;margin-bottom: 55px;margin-top: 101px;}
+	#AboutUs h4{text-align: center;font-size: 30px;margin-bottom: 40px;}
+	#AboutUs .content{min-width:960px;width:70%;overflow:hidden;margin:0 auto;}
+	#AboutUs .content img{display:block;margin:0px auto 30px auto;border:3px solid #6e6e6e;/*max-width:95%;min-width:95%;*/}
+	#AboutUs .content p{width:700px;margin-bottom:10px;margin:auto;text-indent:38px;font-size:18px;line-height:32px;}
+
+	.content {background:url(../images/back.png) no-repeat left top;}
+	/* 联系我们页 */
+	#contactus {color:#fff;}
+	#contactus h3{font-size: 50px;margin-bottom: 18px;}
+	#contactus li{font-size: 20px;line-height: 50px;}
+	#contactus li span{display: block;}
+	#contactus li span i{float:left;margin-top:14px;margin-right:15px;background-image:url(../images/contact.png);display:block;width:25px;height:25px;}
+
 	/*联系我们*/
 	#contact{padding:29px 0;margin:0px auto 40px auto;font-size:18px;min-width:960px;max-width:1200px;}
 	#contact .icon{float:left;margin-right:21px;display:inline;margin-left:7%;}
