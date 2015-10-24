@@ -1,4 +1,4 @@
-var fs=require("fs"),
+﻿var fs=require("fs"),
     gulp=require("gulp"),
     del = require("del"),
     cp = require("cp"),
@@ -51,13 +51,18 @@ InfoReader.prototype={
         //将图片拷贝到dist目录中
         this.copyImages( this.distFolder);
         var me = this;
-        setTimeout(function() {
+	
             for (var i = me.infos.length - 1; i >= 0; i--) {
+		try {
+        		fs.mkdirSync(me.distFolder+me.infos[i].path+'/');
+    		} catch(err) {
+
+    		}
                 generateHtml(me.distFolder+me.infos[i].path+'/'+me.infos[i].name+'.html',
                     me.infos[i]);
 
             }
-        },1000);
+
 
 
         return this.infos;
