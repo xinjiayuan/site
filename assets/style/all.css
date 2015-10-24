@@ -50,11 +50,11 @@
 	#ProductContent .pages{width:85%;margin:0 auto;}
 	#AboutUs h3{text-align: center;font-size: 50px;margin-bottom: 55px;margin-top: 101px;}
 	#AboutUs h4{text-align: center;font-size: 30px;margin-bottom: 40px;}
-	#AboutUs .content{min-width:960px;width:70%;overflow:hidden;margin:0 auto;}
+	#AboutUs .content{min-width:960px;width:70%;overflow:hidden;margin:0 auto;color:#fff;}
 	#AboutUs .content img{display:block;margin:0px auto 30px auto;border:3px solid #6e6e6e;/*max-width:95%;min-width:95%;*/}
 	#AboutUs .content p{width:700px;margin-bottom:10px;margin:auto;text-indent:38px;font-size:18px;line-height:32px;}
 
-	.logoback {background:url(../images/back.png) no-repeat left top;}
+	.logoback {background:url(../images/back.png) no-repeat left top;background-size:947px 961px;background-position: 60px 0px;}
 	/* 联系我们页 */
 	#contactus {color:#fff;}
 	#contactus h3{font-size: 50px;margin-bottom: 18px;}
