@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=960, initial-scale=0.33">
+    <title><%=info.title %></title>
+    <script src="../../js/respond.src.js"></script>
+    <link href="../../style/reset_css.css" rel="stylesheet" />
+    <link href="../../style/all.css"  rel="stylesheet" />
+    <script src="../../js/jquery.js"></script>
+    <script src="../../js/load.js" defer></script>
+    <!--[if IE]>
+    <script src="js/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+        <% include header %>
+        <!-- nav结束 -->
+
+        <!-- weizi结束 -->
+
+        <div style="width:100%;padding-top:90px;background-color:#5b1203;">
+            <div id="infocontent">
+                <div class="infobox">
+                    <div class="infodate"><%=info.infodate %></div>
+                    <div class="infoarrow">
+                    <a href="javascript:history.back(-1);">
+                    <img style="cursor:pointer" src="../../images/infoarrow.png" title="返回上一页"/>
+                    </a></div>
+                    <div class="infocontent">
+                        <div class="infotitle"><%=info.title %></div>
+                        <div class="infodesc">
+
+                            <pre>
+                            <%=info.content %>
+                            </pre>
+                            <div>
+                            <% info.images.forEach(function(img){ %>
+                              <img src="<%=info.name %>/<%=img %>" alt="<%=info.title %>" />
+                            <% }) %>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- ProductContent结束 -->
+
+        <!-- contact结束 -->
+        <footer id="copyright">
+            <p>武汉鑫嘉源钢结构工程有限公司 版权所有 2007-2016 鄂ICP备05201314号</p>
+
+        </footer>
+        <!-- copyright结束 -->
+
+</body>
+</html>

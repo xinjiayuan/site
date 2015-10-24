@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=960, initial-scale=0.33">
+    <title>鑫嘉源资讯</title>
+    <script src="js/respond.src.js"></script>
+    <link href="style/reset_css.css" rel="stylesheet" />
+    <link href="style/all.css"  rel="stylesheet" />
+    <script src="js/jquery.js"></script>
+    <script src="js/load.js" defer></script>
+    <!--[if IE]>
+    <script src="js/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+        <% include header %>
+        <!-- nav结束 -->
+
+        <!-- weizi结束 -->
+
+        <div style="width:100%;padding-top:90px;background-color:#7f0000;">
+            <div id="infolist">
+                <% infos.forEach(function(info){ %>
+                       <div class="infobox">
+                            <div class="infodate"><%= info.infodate %></div>
+                            <div class="infoarrow">
+                            <a href="infos/<%= info.link %>">
+                            <img style="cursor:pointer" src="images/arrow.png" title="<%= info.title %>"/>
+                            </a></div>
+                            <div class="infocontent">
+                                <div class="infotitle"><a style="color:#fff;" href="infos/<%= info.link %>"><%= info.title %></a></div>
+                                <div class="infodesc"><%= info.desc %></div>
+                            </div>
+                        </div>
+                        <hr/>
+                <% }) %>
+
+                <span class="clear"></span>
+
+                <div class="pages">
+                    <em><%=paging.current+1 %>/<%=paging.total %>页</em>
+                    <a href="<%=pagename %>-0.html">首页</a>
+                    <% if (!paging.isFirst) { %>
+                        <a href="<%=pagename %>-<%=paging.pre %>.html">上一页</a>
+                    <% } %>
+                    <% if (!paging.isLast) { %>
+                        <a href="<%=pagename %>-<%=paging.next %>.html">下一页</a>
+                    <% } %>
+                    <a href="<%=pagename %>-<%=paging.last %>.html">尾页</a>
+                    跳转
+                     <select class="select" name="select">
+                        <% for (var i=paging.current;i<paging.total;i++) {%>
+                        <option value="<%=i %>"><%=i+1 %></option>
+                        <% } %>
+                    </select>
+                    页
+                </div>
+            </div>
+
+        </div>
+        <!-- ProductContent结束 -->
+
+        <!-- contact结束 -->
+        <footer id="copyright">
+            <p>武汉鑫嘉源钢结构工程有限公司 版权所有 2007-2016 鄂ICP备05201314号</p>
+
+        </footer>
+        <!-- copyright结束 -->
+
+</body>
+</html>

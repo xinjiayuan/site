@@ -79,6 +79,8 @@ var global = {
                 "active": false
             }
         ]
+
+
     }
 };
 exports=module.exports=global;

@@ -178,12 +178,12 @@ Project.prototype = {
                 var index = parseInt(nameParts[0]);
                 //项目名称
                 var title = nameParts[1].substring(0, nameParts[1].length-4);
-		var desc = "";
-		try {
-			desc = fs.readFileSync(this.root+field+"/"+index+"/desc.txt");
-		} catch (err) {
-			console.error(err);
-		}
+        		var desc = "";
+        		try {
+        			desc = fs.readFileSync(this.root+field+"/"+index+"/desc.txt");
+        		} catch (err) {
+        			console.error(err);
+        		}
                 //项目信息
                 var projectInfo = {
                     "imgFile" : name,
