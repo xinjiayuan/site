@@ -10,7 +10,6 @@ var global = require("./global"),
 function generate(templ, data, filename) {
     var str = fs.readFileSync('./templates/'+templ+'.ejs');
     var html = ejs.render(str.toString(), data,{filename:'./templates/'+templ});
-    // console.log(html);
     if (!filename) {
         filename = templ;
     }
@@ -44,7 +43,6 @@ function generateInfos() {
     });
     var infoCount = infos.length;
     var pageCount = Math.ceil(infoCount/pageSize);
-    console.log('pageCount='+pageCount);
     for (var i = 0; i < pageCount ; i++) {
         var name_index = i;
         //计算slice的end

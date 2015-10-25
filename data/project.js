@@ -47,7 +47,6 @@ Project.prototype = {
         var fieldFolder = this.distFolder+'/'+this.field.name;
         //将图片拷贝到dist目录中
         this.copyImages( fieldFolder);
-        // console.log(this.field.title);
         var projects = this.getProjects();
         var menus = util.activeMenu(global.menus, '鑫嘉源案例'),
             submenus = util.activeMenu(global.submenus.cases, this.field.title);
@@ -68,19 +67,10 @@ Project.prototype = {
                 'paging' : this.formPaging(name_index,this.num_of_projects_in_page,projectsCount),
                 'path':'./'
             };
-            //console.log(contextdata);
             generate("./templates/index.ejs",'./dist/'+this.field.name+'-'+name_index+'.html',contextdata);
-            /*gulp.src("./templates/index.ejs")
-            .pipe(ejs(contextdata))
-            .pipe(rename(this.field.name+'-'+name_index+'.html'))
-            .pipe(gulp.dest('./dist'));*/
             //生成文件名中不带0的栏目首页,内容与pagename-0.html相同,带0的页面为了分页方便
             if (i === 0) {
                 generate("./templates/index.ejs",'./dist/'+this.field.name+'.html',contextdata);
-                /*gulp.src("./templates/index.ejs")
-                .pipe(ejs(contextdata))
-                .pipe(rename(this.field.name+'.html'))
-                .pipe(gulp.dest('./dist'));*/
             }
 
              //生成项目页面
@@ -98,20 +88,6 @@ Project.prototype = {
                         //相对路径, 用来设定图片等资源路径
                         'path':'../../'
                     });
-                /*gulp.src("./templates/project.ejs")
-                    .pipe(ejs({
-                        //项目页的父页面链接地址
-                        'parentlink' : '../../'+this.field.name+'-'+name_index+'.html',
-                        //广告领域名称
-                        'fieldtitle':this.field.title,
-                        //广告领域页面名字, 为了设定submenu的高亮
-                        'pagename' : this.field.name,
-                        'menus'     : menus,
-                        'submenus'  : submenus,
-                        'project'   : pageProjects[j],
-                        //相对路径, 用来设定图片等资源路径
-                        'path':'../../'
-                    })).pipe(rename(pageProjects[j].index+'.html')).pipe(gulp.dest(fieldFolder));*/
             }
         }
 

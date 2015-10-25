@@ -51,7 +51,7 @@ InfoReader.prototype={
         //将图片拷贝到dist目录中
         this.copyImages( this.distFolder);
         var me = this;
-	
+
             for (var i = me.infos.length - 1; i >= 0; i--) {
 		try {
         		fs.mkdirSync(me.distFolder+me.infos[i].path+'/');
@@ -91,7 +91,6 @@ InfoReader.prototype={
             for (var j = infoList.length - 1; j >= 0; j--) {
                 var infoFolder = infoList[j];
                 var infoFilePath = path+name+'/'+infoFolder;
-                console.log('infoFilePath='+infoFilePath);
                 var infoFiles = fs.readdirSync(infoFilePath);
                 var desc = "", content = "", title="";
                 var images = [];
