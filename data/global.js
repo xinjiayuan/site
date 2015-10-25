@@ -3,22 +3,22 @@ var global = {
     "menus": [
         {
             "title" : "鑫嘉源案例",
-            "link"  : "/index.html",
+            "link"  : "index.html",
             "active": false
         },
         {
             "title" : "关于鑫嘉源",
-            "link"  : "/about.html",
+            "link"  : "about.html",
             "active": false
         },
         {
             "title" : "鑫嘉源资讯",
-            "link"  : "/info.html",
+            "link"  : "info.html",
             "active": false
         },
         {
             "title" : "联系我们",
-            "link"  : "/contact.html",
+            "link"  : "contact.html",
             "active": false
         }
     ],
