@@ -90,19 +90,19 @@
 	#infolist{width:1000px;color:#fff;margin:0 auto;}
 	#infolist .infobox{width:100%;height:220px;}
 	#infolist .infodate{padding-top:10px;height:100%;float:left;width:245px;font-size:20px;text-align:center;}
-	#infolist .infocontent{height:100%;}
+	#infolist .infocontent{height:100%;width: 627px;margin-left: 245px;}
 	#infolist .infotitle{font-size:40px;height:140px;}
 	#infolist .infodesc{font-size:18px;}
 	#infolist .infoarrow{float:right;width:128px;text-align:right;padding-top:70px;}
 	#infolist hr{color:#fff;width:100%;margin-bottom:90px;}
 
 	#infocontent{width:1000px;color:#fff;margin:0 auto;}
-	#infocontent .infobox{width:100%;height:2000px;}
+	#infocontent .infobox{width:100%;height:100%;}
 	#infocontent .infodate{padding-top:10px;height:100%;float:left;width:245px;font-size:20px;text-align:center;}
-	#infocontent .infocontent{height:100%;}
+	#infocontent .infocontent{height:100%;width: 627px;margin-left: 245px;}
 	#infocontent .infotitle{font-size:40px;height:140px;}
 	#infocontent .infodesc{font-size:18px;}
-	#infocontent .infodesc pre{width:850px;white-space: pre-wrap;word-wrap: break-word;}
+	#infocontent .infodesc pre{white-space: pre-wrap;word-wrap: break-word;}
 	#infocontent .infodesc img{max-width:600px;display:block;margin-bottom:10px;}
 	#infocontent .infoarrow{float:right;width:128px;text-align:right;padding-top:70px;}
 	#infocontent hr{color:#fff;width:100%;margin-bottom:90px;}
