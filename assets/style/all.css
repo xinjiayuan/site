@@ -46,7 +46,7 @@
 	#ProductContent{line-height:28px;font-size:16px;margin:0 auto;min-width:960px;max-width:1200px;}
 	#ProductContent .content{min-width:960px;width:90%;overflow:hidden;margin:0 auto;}
 	#ProductContent .content img{display:block;margin:0px auto 30px auto;border:3px solid #6e6e6e;/*max-width:95%;min-width:95%;*/}
-	#ProductContent .content p{margin-bottom:10px;text-indent:28px;}
+	#ProductContent .content pre{margin-bottom:10px;width: 900px;margin: 0 auto;white-space: pre-wrap;word-wrap: break-word;}
 	#ProductContent .pages{width:85%;margin:0 auto;}
 	#AboutUs h3{text-align: center;font-size: 40px;margin-bottom: 55px;margin-top: 101px;font-weight:normal;}
 	#AboutUs h4{text-align: center;font-size: 25px;margin-bottom: 40px;font-weight:normal;}
