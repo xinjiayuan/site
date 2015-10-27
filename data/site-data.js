@@ -76,13 +76,14 @@ function generateInfos() {
 }
 
 function generateSite() {
+
+    generate('index',index,'main');
     generate('cover',{
                         'pagename' : 'cover',
                         'menus':util.activeMenu(global.menus, null),
                         'submenus':'hide',
                         'path':'./'
                     },'index');
-    generate('index',index,'main');
     generateInfos();
     generate('about',{
                         'pagename' : 'about',
