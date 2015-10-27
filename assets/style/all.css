@@ -22,6 +22,8 @@
 	#nav ul li a{float:left;height:39px;line-height:39px;font-size:18px;color:#040404;padding:0 24px;}
 	#nav ul li.change a,#nav ul li a:hover{text-decoration:none;color:#fff;}
 	#nav .btn_redbg{height:39px;line-height:39px;background:url(../images/menu_libg.jpg) repeat-x left top;position:absolute;top:0px;left:0px;}
+
+	#cover{width:100%;min-height: 100%;height: auto !important;background:url(../images/cover.jpg) no-repeat 0px -136px;background-size:100%;}
 	/*产品列表*/
 	#ProudctList{width:100%;overflow:hidden;margin:0 auto;padding:30px 0 50px;max-width:1200px;min-width:960px;}
 	#ProudctList h2{height:94px;line-height:94px;overflow:hidden;font-size:28px;font-weight:normal;}

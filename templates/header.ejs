@@ -21,6 +21,7 @@
 
 </header>
 <!-- header结束 -->
+<% if (submenus != 'hide') { %>
 <nav id="nav">
     <div class="center">
 
@@ -31,9 +32,10 @@
               <li<% if (_submenu.name === pagename) { %> class="change"<% } %>><a href="<%=path %><%=_submenu.link %>"><%=_submenu.title %></a></li>
             <% }) %>
             <% } %>
-            <% } %>
+             <% } %>
             </ul>
         <span class="btn_redbg"></span>
     </div>
 
 </nav>
+<% } %>
