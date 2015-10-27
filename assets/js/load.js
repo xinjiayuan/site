@@ -131,10 +131,8 @@
 
 
 	$(window).resize(function(){
-		if ($.reset_redbtn) {
-			$.reset_redbtn(0)
-			$.reset_redbtn2(0)
-		}
+			$.reset_redbtn(0);
+			$.reset_redbtn2(0);
 
 	})
 
