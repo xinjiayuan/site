@@ -162,6 +162,7 @@ Project.prototype = {
         		}
                 //项目信息
                 var projectInfo = {
+                    "field" : field,
                     "imgFile" : name,
                     "index" : index,
                     "title" : title,
