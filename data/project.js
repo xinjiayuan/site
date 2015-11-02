@@ -27,6 +27,7 @@ function Project(field, options) {
     this.projects = {};
     this.imgExt = ".jpg";
     this.distFolder = options.dist;
+    this.noProjectImage = options.noProjectImage;
     try {
         fs.mkdirSync(this.distFolder);
     } catch(err) {
@@ -116,8 +117,12 @@ Project.prototype = {
 
     //将项目图片从data目录中拷贝到dist目录中
     copyImages:function( fieldFolder) {
+
         var field = this.field.name;
         fs.mkdirSync(fieldFolder);
+        if (this.noProjectImage) {
+            return;
+        }
         var projects = this.getProjects();
 
         for (var i=0,len=projects.length;i<len;i++) {

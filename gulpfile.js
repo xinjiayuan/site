@@ -3,7 +3,6 @@ var gulp = require('gulp'),
     del = require("del"),
     gulpCopy = require('gulp-copy');
 
-
 gulp.task('clean', function(cb) {
     del(['dist'],cb);
 });
@@ -18,4 +17,7 @@ gulp.task('generate', ['copy'], function () {
   return generateSite();
 });
 
-
+gulp.task('generate-noimg', ['copy'], function () {
+  var generateSite = require("./data/site-data");
+  return generateSite({'noProjectImage':true});
+});
