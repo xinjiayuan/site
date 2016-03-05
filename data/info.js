@@ -77,6 +77,9 @@ InfoReader.prototype={
     },
 
     read:function() {
+        function isDir(path) {
+            return fs.statSync(path).isDirectory();
+        }
         var path = this.root;
         var infoDates = fs.readdirSync(path);
         var infos = [];
@@ -91,6 +94,9 @@ InfoReader.prototype={
             for (var j = infoList.length - 1; j >= 0; j--) {
                 var infoFolder = infoList[j];
                 var infoFilePath = path+name+'/'+infoFolder;
+                if (!isDir(infoFilePath)) {
+                    continue;
+                }
                 var infoFiles = fs.readdirSync(infoFilePath);
                 var desc = "", content = "", title="";
                 var images = [];
