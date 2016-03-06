@@ -1,4 +1,4 @@
-var global = {
+var globalResource = {
     //主菜单
     "menus": [
         {
@@ -83,4 +83,4 @@ var global = {
 
     }
 };
-exports=module.exports=global;
+exports=module.exports=globalResource;

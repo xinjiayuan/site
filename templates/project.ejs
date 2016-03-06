@@ -31,7 +31,7 @@
                     <pre><%=project.desc %></pre>
                     <br>
                     <% project.images.forEach(function(img){ %>
-                      <img src="http://42.121.108.110/xjy/cases/<%=project.field %>/<%=project.index %>/<%=img %>" alt="<%=project.title %>" />
+                      <img src="<%=prefix %>/cases/<%=project.field %>/<%=project.index %>/<%=img %>" alt="<%=project.title %>" />
                     <% }) %>
             <!-- 文章内容结束 -->
             </div>

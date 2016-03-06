@@ -14,10 +14,15 @@ gulp.task('copy', ['clean'], function() {
 
 gulp.task('generate', ['copy'], function () {
   var generateSite = require("./data/site-data");
-  return generateSite();
+  return generateSite({'prefix':'http://42.121.108.110/xjy/'});
+});
+
+gulp.task('generate-local', ['copy'], function () {
+  var generateSite = require("./data/site-data");
+  return generateSite({'prefix':__dirname+'/dist/'});
 });
 
 gulp.task('generate-noimg', ['copy'], function () {
   var generateSite = require("./data/site-data");
-  return generateSite({'noProjectImage':true});
+  return generateSite({'prefix':'http://42.121.108.110/xjy/', 'noProjectImage':true});
 });

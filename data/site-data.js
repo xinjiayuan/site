@@ -6,8 +6,9 @@ var global = require("./global"),
     ProjectReader = require('./project'),
     util   = require("./util");
 
-
+var prefix;
 function generate(templ, data, filename) {
+    data.prefix = prefix;
     var str = fs.readFileSync('./templates/'+templ+'.ejs');
     var html = ejs.render(str.toString(), data,{filename:'./templates/'+templ});
     if (!filename) {
@@ -36,6 +37,7 @@ function generateProjects(options) {
         options = {};
     }
     options['dist'] = './dist/cases/';
+    options['prefix'] = prefix;
     //遍历所有的案例行业
     var hit = -1;
     for (var i = global.submenus.cases.length - 1; i >= 0; i--) {
@@ -73,7 +75,7 @@ function generateMainPage() {
         'submenus':_submenus,
         'projects' : pageProjects,
         'paging':projectReader.formPaging(0,projectReader.num_of_projects_in_page,_projects.length),
-        'path':'./'
+        'path':'./',
     };
     generate('index',indexdata,'main');
 }
@@ -125,6 +127,8 @@ function generateInfos() {
 }
 
 function generateSite(options) {
+    prefix = options.prefix.replace(/\\/g,'/');
+    console.log(prefix);
     generateProjects(options);
     generateMainPage();
 

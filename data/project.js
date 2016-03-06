@@ -28,6 +28,7 @@ function Project(field, options) {
     this.imgExt = ".jpg";
     this.distFolder = options.dist;
     this.noProjectImage = options.noProjectImage;
+    this.prefix = options.prefix;
     try {
         fs.mkdirSync(this.distFolder);
     } catch(err) {
@@ -66,7 +67,8 @@ Project.prototype = {
                 'submenus': submenus,
                 'projects' : pageProjects,
                 'paging' : this.formPaging(name_index,this.num_of_projects_in_page,projectsCount),
-                'path':'./'
+                'path':'./',
+                'prefix' : this.prefix
             };
             generate("./templates/index.ejs",'./dist/'+this.field.name+'-'+name_index+'.html',contextdata);
             //生成文件名中不带0的栏目首页,内容与pagename-0.html相同,带0的页面为了分页方便
@@ -87,7 +89,8 @@ Project.prototype = {
                         'submenus'  : submenus,
                         'project'   : pageProjects[j],
                         //相对路径, 用来设定图片等资源路径
-                        'path':'../../'
+                        'path':'../../',
+                        'prefix' : this.prefix
                     });
             }
         }
