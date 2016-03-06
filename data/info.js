@@ -32,7 +32,7 @@ function InfoReader() {
     //url根路径
     this.urlRoot = 'infos/';
     this.infos = {};
-    this.imgExt = ".jpg";
+    this.imgExt = "(.jpg|.gif)";
     this.distFolder = './dist/infos/';
     try {
         fs.mkdirSync(this.distFolder);
@@ -72,7 +72,7 @@ InfoReader.prototype={
     copyImages:function( distFolder) {
         // fs.mkdirSync(distFolder);
         //拷贝图片和缩略图
-        gulp.src(this.root+"/**/*"+this.imgExt).pipe(gulpCopy(distFolder,
+        gulp.src([this.root+"/**/*.png",this.root+"/**/*.jpg",this.root+"/**/*.gif"]).pipe(gulpCopy(distFolder,
             {prefix:2}));//prefix:3即拷贝到目的地的目录深度
     },
 
