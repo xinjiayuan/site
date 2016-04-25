@@ -235,3 +235,19 @@
     w.attachEvent("onresize", callMedia);
   }
 })(this);
+
+
+// baidu stats, added 2016-04-25
+var _hmt = _hmt || [];
+
+(function() {
+
+  var hm = document.createElement("script");
+
+  hm.src = "//hm.baidu.com/hm.js?e22afeec8a8de34abb9dbb7ca31aa327";
+
+  var s = document.getElementsByTagName("script")[0];
+
+  s.parentNode.insertBefore(hm, s);
+
+})();
